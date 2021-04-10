@@ -17,3 +17,10 @@
 - name: Include Windows tasks
   include_tasks: windows.yml
   when: ansible_os_family == 'Windows'
+
+# -----------------------------------------------------------------------
+# Tasks for macOS
+# -----------------------------------------------------------------------
+- name: Include Windows tasks
+  include_tasks: darwin.yml
+  when: ansible_os_family == 'Darwin'
